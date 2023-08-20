@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .navbar {
+    @apply bg-slate-100 flex justify-center items-stretch gap-8 px-4 py-2 m-0;
+  }
+
+  .nav-ul {
+    @apply list-none gap-8 flex p-0 m-0;
+  }
+
+  .nav-li {
+    @apply m-0;
+  }
+
+  .navitem-anchor {
+    @apply no-underline text-slate-950 hover:text-sky-400 h-full flex items-center p-1 font-medium;
+  }
+}
