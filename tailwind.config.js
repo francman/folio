@@ -10,6 +10,9 @@ export default {
         primary: color.slate[100],
         secondary: color.slate[950],
       },
+      fontFamily: {
+        montserrat: ["Montserrat"],
+      },
     },
   },
   plugins: [],
