@@ -4,19 +4,21 @@ import NavLogo from "./NavLogo";
 
 function Navbar() {
   return (
-    <nav className="navbar">
+    <div className="navbar">
       <NavLogo></NavLogo>
-      <ul className="nav-ul">
-        {navLinks.map((data, idx) => (
-          <NavItem
-            key={idx}
-            id={data.id}
-            link={data.link}
-            name={data.name}
-          ></NavItem>
-        ))}
-      </ul>
-    </nav>
+      <nav className="navigationLinks">
+        <ul className="nav-ul">
+          {navLinks.map((data, idx) => (
+            <NavItem
+              key={idx}
+              id={data.id}
+              link={data.link}
+              name={data.name}
+            ></NavItem>
+          ))}
+        </ul>
+      </nav>
+    </div>
   );
 }
 

@@ -6,7 +6,7 @@ function NavLogo() {
   return (
     <BrowserRouter>
       <Link id={navLogo.id} to={navLogo.link} className="text-logo">
-        {navLogo.text}
+        {navLogo.text.toUpperCase()}
       </Link>
     </BrowserRouter>
   );
