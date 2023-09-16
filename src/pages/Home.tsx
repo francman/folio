@@ -1,4 +1,4 @@
-function Projects() {
+export function Home() {
   return (
     <>
       <h2>Lander</h2>
@@ -6,4 +6,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Home;

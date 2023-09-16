@@ -1,5 +1,5 @@
-import { BrowserRouter } from "react-router-dom";
-import { HashLink as Link } from "react-router-hash-link";
+import { NavLink} from "react-router-dom";
+// import { HashLink as Link } from "react-router-hash-link";
 
 interface Props {
   id: string;
@@ -9,17 +9,15 @@ interface Props {
 
 function NavItem(props: Props) {
   return (
-    <BrowserRouter>
       <li id={props.id + "NavDiv"} className="nav-li">
-        <Link
+        <NavLink
           id={props.id + "NavLink"}
           className="navitem-anchor"
           to={props.link}
         >
           {props.name}
-        </Link>
+        </NavLink>
       </li>
-    </BrowserRouter>
   );
 }
 

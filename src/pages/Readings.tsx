@@ -1,4 +1,4 @@
-function Readings() {
+export function Readings() {
   return <div>Readings</div>;
 }
 

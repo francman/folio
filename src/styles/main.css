@@ -15,13 +15,13 @@
   .nav-ul {
     @apply list-none gap-8 flex p-0 m-0;
   }
-
+  
   .nav-li {
     @apply m-0;
   }
 
   .navitem-anchor {
-    @apply no-underline text-slate-950 hover:text-sky-500 
+    @apply no-underline text-slate-950 hover:text-sky-500 active:text-red-600 
     flex items-center p-1 font-medium align-middle;
   }
 
