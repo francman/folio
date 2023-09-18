@@ -7,7 +7,7 @@
 
 @layer components {
   .navbar {
-    @apply bg-slate-100 flex items-center justify-between px-8 py-1 m-0 w-full flex-nowrap;
+    @apply bg-slate-100 flex items-center justify-between px-8 py-1 m-0 w-full flex-nowrap sticky top-0;
   }
   .navigationLinks {
     @apply h-fit;
@@ -15,17 +15,17 @@
   .nav-ul {
     @apply list-none gap-8 flex p-0 m-0;
   }
-  
+
   .nav-li {
     @apply m-0;
   }
 
   .navitem-anchor {
-    @apply no-underline text-slate-950 hover:text-sky-500 active:text-red-600 
-    flex items-center p-1 font-medium align-middle;
+    @apply no-underline text-slate-800 hover:text-sky-500
+    flex items-center p-1 font-medium align-middle [&.active]:text-sky-500;
   }
 
   .text-logo {
-    @apply p-2 h-full text-3xl font-montserrat align-middle font-extrabold text-slate-900;
+    @apply p-2 h-full text-3xl font-montserrat align-middle font-extrabold text-slate-800;
   }
 }

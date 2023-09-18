@@ -1,6 +1,6 @@
-import {Route, Routes} from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import {Home, Projects, Writings, Readings, Updates, Lab233} from "./pages";
+import { Home, Projects, Writings, Readings, Updates, Lab233 } from "./pages";
 function App() {
   return (
     <>
