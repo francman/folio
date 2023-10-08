@@ -7,17 +7,31 @@
 
 @layer components {
   .navbar {
-    @apply bg-slate-100 flex items-center justify-between px-8 py-1 m-0 w-full flex-nowrap sticky top-0;
+    @apply flex items-center justify-between px-4 py-1 mx-auto w-full;
+  }
+
+  .mobileNavigationMenu {
+    @apply block md:hidden p-2 h-full;
+  }
+
+  .mobileNavigationMenuItems {
+    @apply block md:hidden fixed left-0 top-0 w-[80%] ease-in-out duration-500 px-8 py-2
+    bg-white mt-14 border-r-2 h-full;
+  }
+
+  .mobileNavigationMenuLinks {
+    @apply border-b-2;
   }
   .navigationLinks {
-    @apply h-fit;
+    @apply h-fit hidden md:block;
   }
+
   .nav-ul {
-    @apply list-none gap-8 flex p-0 m-0;
+    @apply list-none flex gap-8 p-0 m-0;
   }
 
   .nav-li {
-    @apply m-0;
+    @apply m-0 list-none border-b-[0.25px] py-4 md:border-b-0 md:py-0;
   }
 
   .navitem-anchor {
@@ -26,6 +40,6 @@
   }
 
   .text-logo {
-    @apply p-2 h-full text-3xl font-montserrat align-middle font-extrabold text-slate-800;
+    @apply p-2 h-full text-3xl font-montserrat align-middle font-extrabold text-slate-800 uppercase;
   }
 }

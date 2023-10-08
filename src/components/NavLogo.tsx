@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 function NavLogo() {
   return (
-      <Link id={navLogo.id} to={navLogo.link} className="text-logo">
-        {navLogo.text.toUpperCase()}
-      </Link>
+    <Link id={navLogo.id} to={navLogo.link} className="text-logo">
+      {navLogo.text}
+    </Link>
   );
 }
 

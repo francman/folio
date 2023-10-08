@@ -8,6 +8,6 @@ export const navLinks: { id: string; link: string; name: string }[] = [
 
 export const navLogo: { link: string; text: string; id: string } = {
   link: "/",
-  text: "kofi",
+  text: "kofi.0",
   id: "navLogo",
 };
