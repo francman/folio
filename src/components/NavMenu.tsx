@@ -1,7 +1,7 @@
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { navLinks } from "../data/NavData";
-import { useState } from "react";
-import NavItem from "./NavItem";
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { navLinks } from '../data/NavData';
+import { useState } from 'react';
+import NavItem from './NavItem';
 
 function NavMenu() {
   const [nav, setNav] = useState(false);
@@ -14,7 +14,7 @@ function NavMenu() {
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
       <div
-        className={!nav ? "fixed left-[-100%]" : "mobileNavigationMenuItems"}
+        className={!nav ? 'fixed left-[-100%]' : 'mobileNavigationMenuItems'}
       >
         {navLinks.map((dataItem, index) => (
           <NavItem

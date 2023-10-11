@@ -1,8 +1,8 @@
-import color from "tailwindcss/colors";
+import color from 'tailwindcss/colors';
 /** @type {import('tailwindcss').Config} */
 export default {
-  mode: "jit",
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  mode: 'jit',
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   content: [],
   theme: {
     extend: {
@@ -11,7 +11,9 @@ export default {
         secondary: color.slate[950],
       },
       fontFamily: {
-        montserrat: ["Montserrat"],
+        montserrat: ['Montserrat'],
+        roboto: ['Roboto'],
+        noto: ['Noto Sans'],
       },
     },
   },
