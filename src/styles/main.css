@@ -17,7 +17,7 @@
   }
 
   .mobileNavigationMenu {
-    @apply block md:hidden p-2 h-full;
+    @apply block md:hidden p-2 h-full border-2 rounded-full border-slate-600;
   }
 
   .mobileNavigationMenuItems {
@@ -46,6 +46,7 @@
   }
 
   .text-logo {
-    @apply p-2 h-full text-2xl font-noto align-middle font-semibold text-black;
+    @apply p-2 h-full text-3xl font-montserrat align-middle font-extrabold text-slate-800 
+    uppercase;
   }
 }
